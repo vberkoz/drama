@@ -1,0 +1,231 @@
+
+section.theatre {
+    background-image: url('/template/images/news-bg.jpg');
+    border-top: 3px #78481D solid;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 74.7vh;
+    height: 100%;
+}
+
+section.theatre:before {
+    background-color: rgba(254, 216, 154, 0.9);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    z-index: 0;
+    left: 0;
+    top: 0;
+}
+
+.title {
+    background-image: url('/template/images/img-top-right.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 25px 170px 70px 0;
+    position: absolute;
+    min-height: 160px;
+    height: auto;
+    width: auto;
+    z-index: 1;
+    right: 3%;
+    top: 15px;
+}
+
+.title h1 {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px #7E0000 solid;
+    font-weight: bold;
+    font-size: 39px;
+    color: #333;
+    height: 45px;
+}
+
+.title p {
+    font-size: 18px;
+    color: black;
+}
+
+.menu-line {
+    justify-content: flex-start;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    display: -moz-box;
+    min-height: 46px;
+    margin-top: 60px;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.menu-line nav {
+    height: auto;
+    width: 100%;
+}
+
+.menu-line nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-line nav ul li {
+    font-family: "Roboto Condensed", sans-serif, arial;
+    list-style-type: none;
+    display: inline-block;
+    color: #fff;
+    height: auto;
+    width: auto;
+}
+
+.menu-line nav ul li a {
+    text-decoration-line: none;
+    text-transform: uppercase;
+    transition: all 0.1s;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #000;
+}
+
+.menu-line nav ul li a:hover {
+    text-decoration-line: none;
+    border-bottom: 1px #600 solid;
+    transition: all 0.1s;
+    color: #600;
+}
+
+.menu-line nav ul li .active {
+    border-bottom: 1px #600 solid;
+    font-weight: bold;
+    color: #600;
+}
+
+.reper-list {
+    margin: 40px auto 10px auto;
+    text-align: center;
+    position: relative;
+    min-height: 100px;
+    max-width: 1400px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.reper-list a {
+    overflow: hidden;
+    height: auto;
+    width: auto;
+}
+
+.third-fourth-1 {
+    position: relative;
+    left: 25%;
+}
+
+.third-fourth-2 {
+    position: relative;
+    left: -25%;
+}
+
+.reper-block {
+    min-height: 325px;
+    height: auto;
+    float: left;
+    width: 25%;
+}
+
+.reper-block-img {
+    overflow: hidden;
+}
+
+.reper-block-img img {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    min-height: 325px;
+    max-height: 325px;
+    height: auto;
+    width: 100%;
+}
+
+.reper-block-text {
+    background-color: rgba(254, 216, 154, 0.4);
+    justify-content: center;
+    display: -webkit-flex;
+    transition: all 0.1s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    display: -moz-box;
+    overflow: hidden;
+    display: flex;
+    color: #000;
+}
+
+figure {
+    margin: 20px 0 0 0;
+}
+
+.reper-block-text figure {
+    font-family: "Roboto Condensed", sans-serif, arial;
+    line-height: 18px;
+    overflow: hidden;
+    height: auto;
+    margin: 5px;
+    width: auto;
+}
+
+.reper-block-text figure article {
+    font-family: 'Playfair Display', serif;
+    margin: 7px auto 10px auto;
+    font-weight: bold;
+    line-height: 1.0;
+    min-height: 10px;
+    font-size: 39px;
+    height: auto;
+    width: 100%;
+}
+
+.reper-block-text figure span {
+    margin: 0 auto 15px auto;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+}
+
+.reper-block-text figure p {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+.reper-block-text:hover {
+    background-color: #5D0808;
+    transition: all 0.1s;
+    color: #fff;
+}
+
+.square {
+    height: 325px;
+    width: 350px;
+}
+
+.opaline {
+	background: url('/template/images/opacity-line.png') repeat;
+	position: absolute;
+	color: #010101;
+	height: 50px;
+	width: 350px;
+	z-index: 1;
+	bottom: 0;
+}
+
+.opaline p {
+    font-weight: bold;
+	line-height: 50px;
+	font-size: 30px;
+	color: #5D0808;
+}

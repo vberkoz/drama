@@ -1,0 +1,213 @@
+
+footer.footer {
+    border-top: 1px #3E0101 solid;
+    background-color: #290000;
+    position: relative;
+    padding-top: 45px;
+    min-height: 80px;
+    height: auto;
+}
+
+footer.footer:after {
+    position: absolute;
+    height: 26px;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer.footerAdmin {
+    padding-top: 0;
+    min-height: 0;
+}
+
+footer nav {
+    display: inline-block;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    font-family: "RobotoCondensed-Regular", sans-serif, arial;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 8px;
+    color: #888888;
+    font-size: 16px;
+}
+
+footer a {
+    color: #888888;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer span {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-block, .footer-block-low {
+    margin-top: 30px;
+    padding-left: 0;
+}
+
+.footer-block a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-block a:hover {
+    text-decoration: underline;
+}
+
+.footer-block-low {
+    display: block;
+}
+
+.footer-block-sponsor {
+    padding: 0;
+}
+
+.sponsor {
+    display: inline-block;
+    border-radius: 4px;
+    opacity: 0.5;
+    height: 52px;
+    width: 30%;
+}
+
+.sponsor:hover {
+    opacity: 1;
+}
+
+.footer-block-social {
+    font-family: "RobotoCondensed-Regular",sans-serif,arial;
+    text-align: center;
+    min-height: 150px;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.footer-block-social a {
+    position: relative;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+.footer-block-social a i {
+    vertical-align: middle;
+}
+
+.footer-block-social a:hover {
+    opacity: 1;
+}
+
+.footer-block-social a b {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-big-image {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.footer-small-image, .european-route {
+    border-radius: 4px;
+    height: 80px;
+}
+
+.european-route {
+    margin-top: 10px;
+}
+
+.european-route-description {
+    height: 80px;
+}
+
+.european-route-description p {
+    font-size: 15px;
+    color: #838383;
+}
+
+.european-route-description a {
+    font-size: 14px;
+    color: #c4c4c4;
+    text-decoration: underline;
+}
+
+.european-route-description a:hover {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-spectacle {
+    padding: 0;
+}
+
+.footer-author, .footer-date, .footer-type {
+    font-family: "Roboto-Regular", sans-serif, arial;
+    display: inline-block;
+    text-transform: none;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 16px;
+}
+
+.footer-type {
+    color: #cccccc;
+    font-size: 14px;
+    display: block;
+    margin: 0;
+}
+
+.footer-date {
+    color: #888888;
+}
+
+.footer-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.footer-title a {
+    font-size: 16px;
+}
+
+.footer-block hr {
+    border-top: 1px dashed #ccc;
+    display: block;
+    margin: 1em 0;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.footer-small-block {
+    min-height: 90px;
+    margin: 15px 0;
+}
+
+.rights {
+    background-color: #1e0000;
+    text-align: center;
+    position: absolute;
+    padding-top: 10px;
+    color: #838383;
+    min-height: 40px;
+    bottom: 0px;
+    width: 100%;
+}
