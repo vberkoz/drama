@@ -52,7 +52,11 @@
 				</a>
 			</div>
 			<div class="col-xs-6">
-				<a href="http://tickets.dramtheater.cv.ua/ua/playbill/" title="Квитки" style="color: #fff;">
+				<!-- <a href="http://tickets.dramtheater.cv.ua/ua/playbill/" title="Квитки" style="color: #fff;">
+					<div id="tickets_main"></div>
+					Квитки
+				</a> -->
+				<a href="admin/index.html" title="Квитки" style="color: #fff;">
 					<div id="tickets_main"></div>
 					Квитки
 				</a>

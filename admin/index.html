@@ -1,20 +1,28 @@
-<!doctype html>
-<html lang="en" ng-app>
+<!DOCTYPE html>
+<html>
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Playfair+Display|Playfair+Display+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<head>
-    <meta charset="utf-8">
-    <title>My HTML File</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+
+    <!-- DEFAULT JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
-<body>
+    <!-- CUSTOM JS -->
+    <script src="js/app.js"></script>
 
-    <p>Nothing here {{'yet' + '!'}}</p>
-    <p>Name : <input type="text" ng-model="name"></p>
-    <h1>Hello {{name}}</h1>
+<body ng-app="myApp">
+
+    <a href="#/!">Main</a>
+
+    <a href="#!london">City 1</a>
+    <a href="#!paris">City 2</a>
+
+    <div ng-view></div>
 
 </body>
-
 </html>
