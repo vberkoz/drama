@@ -3,13 +3,32 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 a {
-    color: rgb(128, 128, 255);
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.sidebar, .container {
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebar a div {
+    padding: 10px 0 10px 20px;
+    border-left-color: #000;
+    border-left-width: 4px;
+    border-left-style: solid;
+}
+
+.sidebar a div.active {
+    color : #999;
+    border-left-color: #999;
+}
+
+.sidebar a div:hover {
+    background-color: #555;
 }
