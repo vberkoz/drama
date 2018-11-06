@@ -19,7 +19,7 @@ class Article
 
         $articles = array();
 
-        $result = $db->query("SELECT id, title, link, excerpt, created, image"
+        $result = $db->query("SELECT id, title, link, excerpt, created, picture"
             . " FROM dt_articles"
             . " ORDER BY created DESC"
             . " LIMIT " . self::SHOW_BY_DEFAULT
@@ -33,7 +33,7 @@ class Article
             $articles[$i]['link'] = $row['link'];
             $articles[$i]['excerpt'] = $row['excerpt'];
             $articles[$i]['created'] = $row['created'];
-            $articles[$i]['image'] = $row['image'];
+            $articles[$i]['picture'] = $row['picture'];
             $i++;
         }
 

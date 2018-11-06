@@ -2,7 +2,7 @@
 
 return array(
 	'host' => 'localhost',
-	'dbname' => 'mvcdram',
+	'dbname' => 'dram',
 	'user' => 'root',
 	'password' => '',
 );

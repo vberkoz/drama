@@ -21,7 +21,7 @@ section.theatre:before {
     top: 0;
 }
 
-.title {
+/* .title {
     background-image: url('/template/images/img-top-right.png');
     background-position: right top;
     background-repeat: no-repeat;
@@ -33,20 +33,23 @@ section.theatre:before {
     z-index: 1;
     right: 3%;
     top: 15px;
-}
+} */
 
-.title h1 {
+/* .title h1 {
     font-family: 'Playfair Display', serif;
     border-bottom: 2px #7E0000 solid;
     font-weight: bold;
     font-size: 39px;
     color: #333;
     height: 45px;
-}
+} */
 
-.title p {
-    font-size: 18px;
-    color: black;
+.page-title {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px #7E0000 solid;
+    font-weight: bold;
+    font-size: 60px;
+    color: #000;
 }
 
 .news-list {
@@ -105,6 +108,14 @@ section.theatre:before {
 
 .new-text p {
     font-size: 16px;
+}
+
+.article-title-link {
+    color: #000;
+}
+
+.article-title-link:hover {
+    color: #5D0808;
 }
 
 .new-text .more {

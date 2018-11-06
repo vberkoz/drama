@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="new-photo">
-						<img src="/template/images/original/<?php echo $article['image'] ?>">
+						<img src="/template/images/original/<?php echo $article['picture'] ?>">
 						<span class="date"><?php echo $article['created']; ?></span>
 					</div>
 				</div>
@@ -18,7 +18,7 @@
 						<p><b><?php echo $article['created']; ?></b></p>
 					</div>
 					<div style="color:#000;">
-						<p><?php echo $article['content']; ?></p>
+						<p><?php echo $article['body']; ?></p>
 					</div>
 				</div>
 			</div>

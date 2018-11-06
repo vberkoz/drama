@@ -1,6 +1,6 @@
 <?php
 
-function __autoload($class_name)
+function autoload($class_name)
 {
 
     $array_paths = array(
@@ -16,3 +16,5 @@ function __autoload($class_name)
     }
 
 }
+
+spl_autoload_register('autoload');
