@@ -5,13 +5,13 @@
     <title>Чернівецький академічний обласний Український музично-драматичний театр ім. Ольги Кобилянської</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/template/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/template/css/home.css">
-    <link rel="stylesheet" href="/template/css/home-media.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/home-media.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@
 	<div class="container">
 		<div class="row" id="upper">
 			<a href="/news">
-				<img src="/template/images/logo.png" alt="Чернівецький академічний обласний український музично-драматичний театр імені Ольги Кобилянської">
+				<img src="/assets/images/logo.png" alt="Чернівецький академічний обласний український музично-драматичний театр імені Ольги Кобилянської">
 			</a>
 		</div>
 		<div class="row" id="lower">

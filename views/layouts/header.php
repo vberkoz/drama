@@ -9,60 +9,67 @@
 	<meta name="author" content="admin">
 
     <!-- FAVICO -->
-    <link rel="shortcut icon" href="/template/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Playfair+Display|Playfair+Display+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- DEFAULT CSS -->
-    <link rel="stylesheet" href="/template/css/hamburgers.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="/template/css/header.css">
-    <link rel="stylesheet" href="/template/css/header-media.css">
-    <link rel="stylesheet" href="/template/css/footer.css">
-    <link rel="stylesheet" href="/template/css/articles-list.css">
-	<link rel="stylesheet" href="/template/css/articles.css">
-	<link rel="stylesheet" href="/template/css/repertoire.css">
-	<link rel="stylesheet" href="/template/css/spectacle.css">
-	<link rel="stylesheet" href="/template/css/workers.css">
-	<link rel="stylesheet" href="/template/css/worker.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/header-media.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/articles-list.css">
+	<link rel="stylesheet" href="/assets/css/article.css">
+	<link rel="stylesheet" href="/assets/css/repertoire.css">
+	<link rel="stylesheet" href="/assets/css/spectacle.css">
+	<link rel="stylesheet" href="/assets/css/workers.css">
+	<link rel="stylesheet" href="/assets/css/worker.css">
+
+	<!-- DEFAULT JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 	<style>
 		.topnav {
-		overflow: hidden;
-		background-color: #333;
+			overflow: hidden;
+			background-color: #290000;
 		}
 
 		.topnav a {
-		float: left;
-		display: block;
-		color: #f2f2f2;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 17px;
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
 		}
 
 		.topnav a:hover {
-		background-color: #ddd;
-		color: black;
+			background-color: #ddd;
+			color: black;
 		}
 
 		.active {
-		background-color: #4CAF50;
-		color: white;
+			/* border-bottom: 1px #600 solid;
+			font-weight: bold; */
+  			background-color: #460000;
+			color: #600;
 		}
 
 		.topnav .icon {
-		display: none;
+			display: none;
 		}
 
 		@media screen and (max-width: 600px) {
-			.topnav a:not(:first-child) {display: none;}
+			.under-menu { display: none; }
+			.topnav a:not(.active) {display: none;}
 			.topnav a.icon {
 				float: right;
 				display: block;
@@ -83,6 +90,18 @@
 			}
 		}
 	</style>
+
+    <script>
+        function myFunction() {
+            console.log('myFunction');
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -104,45 +123,25 @@
 					</div>
 				</div>
 				<div class="col-xs-4 logo">
-					<a href="/" class="logo-page"><img src="/template/images/logo.png"></a>
+					<a href="/" class="logo-page"><img src="/assets/images/logo.png"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="menu">
+	<div class="topnav" id="myTopnav">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12" style="text-align: right;">
-					<div class="hamburger hamburger--arrowalt hidden-lg hidden-md hidden-sm">
-					    <div class="hamburger-box">
-					    	<div class="hamburger-inner"></div>
-					    </div>
-					</div>
-					<nav>
-						<ul>
-							<li class="left-li menu-item"><a href="/affiche/<?php echo strtolower(date("F")); ?>" <?php echo (strpos($_SERVER['REQUEST_URI'], 'affiche'))?'class="active"':null?>>Афіша</a></li>
-							<li class="left-li menu-item"><a href="#">Театр</a></li>
-							<li class="left-li menu-item"><a href="/workers/management" <?php echo (strpos($_SERVER['REQUEST_URI'], 'worker'))?'class="active"':null?>>Працівники</a></li>
-							<li class="left-li menu-item"><a href="/repertoire/general" <?php echo (strpos($_SERVER['REQUEST_URI'], 'repertoire') || strpos($_SERVER['REQUEST_URI'], 'spectacle'))?'class="active"':null?>>Репертуар</a></li>
-							<li class="left-li menu-item"><a href="#">Фестиваль</a></li>
-							<li class="right-li menu-item"><a href="#">Студія</a></li>
-							<li class="right-li menu-item"><a href="/news" <?php echo (strpos($_SERVER['REQUEST_URI'], 'news') || strpos($_SERVER['REQUEST_URI'], 'article'))?'class="active"':null?>>Новини</a></li>
-							<li class="right-li menu-item"><a href="#">Вакансії</a></li>
-							<li class="right-li menu-item"><a href="http://tickets.dramtheater.cv.ua/ua/playbill/">Квитки</a></li>
-							<li class="right-li menu-item"><a href="#">Контакти</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<a href="/affiche/<?php echo strtolower(date("F")); ?>" <?php echo (strpos($_SERVER['REQUEST_URI'], 'affiche'))?'class="active"':null?>>Афіша</a>
+			<a href="#">Театр</a></li>
+			<a href="/workers/management" <?php echo (strpos($_SERVER['REQUEST_URI'], 'worker'))?'class="active"':null?>>Працівники</a>
+			<a href="/repertoire/general" <?php echo (strpos($_SERVER['REQUEST_URI'], 'repertoire') || strpos($_SERVER['REQUEST_URI'], 'spectacle'))?'class="active"':null?>>Репертуар</a>
+			<a href="#">Фестиваль</a>
+			<a href="#">Студія</a>
+			<a href="/news" <?php echo (strpos($_SERVER['REQUEST_URI'], 'news') || strpos($_SERVER['REQUEST_URI'], 'article'))?'class="active"':null?>>Новини</a>
+			<a href="#">Вакансії</a>
+			<a href="http://tickets.dramtheater.cv.ua/ua/playbill/" target="_blank">Квитки</a>
+			<a href="#">Контакти</a>
+			<a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 		</div>
 	</div>
-
-	<!-- <div class="topnav" id="myTopnav">
-		<a href="#home" class="active">Home</a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-		<a href="#about">About</a>
-		<a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-	</div> -->
 </div>

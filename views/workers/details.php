@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <figure class="team">
-                        <img src="/template/images/original/<?php echo $worker['image'] ?>" alt="<?php echo $worker['image'] ?>">
+                        <img src="/assets/images/original/<?php echo $worker['image'] ?>" alt="<?php echo $worker['image'] ?>">
                     </figure>
                 </div>
 

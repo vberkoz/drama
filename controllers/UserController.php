@@ -3,13 +3,8 @@
 class UserController
 {
 
-    /**
-     * Login user page
-     * @return boolean
-     */
     public function actionLogin()
     {
-
         $email = '';
         $password = '';
 
@@ -33,24 +28,16 @@ class UserController
                 $errors[] = 'Wrong email or password';
             } else {
                 User::auth($userId);
-                header('Location: /cabinet/');
+                header('Location: /admin/dashboard/');
             }
-
         }
 
         require_once(ROOT . '/views/user/login.php');
-
         return true;
-
     }
 
-    /**
-     * Register user page
-     * @return boolean
-     */
     public static function actionRegister()
     {
-
         $name = '';
         $email = '';
         $password = '';
@@ -60,7 +47,6 @@ class UserController
             $name = $_POST['name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
-
             $errors = false;
 
             if (!User::checkName($name)) {
@@ -82,24 +68,19 @@ class UserController
             if (!$errors) {
                 $result = User::register($name, $password, $email);
             }
-
         }
-
+        
         require_once(ROOT . '/views/user/register.php');
-
         return true;
-
     }
 
-    /**
-     * Delete user data form session
-     */
     public function actionLogout()
     {
-
+        // session_start();
         unset($_SESSION['user']);
-        header('Locations: /');
-
+        // header('Locations: /user/login/');
+        AdminBase::checkAdmin();
+        
+        return true;
     }
-
 }

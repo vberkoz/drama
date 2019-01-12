@@ -2,11 +2,6 @@
 
 class NewsController
 {
-
-    /**
-     * News page action
-     * @return boolean
-     */
     public static function actionIndex($page = 1)
     {
 
@@ -24,13 +19,11 @@ class NewsController
 
     }
 
-    /**
-     * Article page action
-     * @return boolean
-     */
 	public function actionView($articleLink)
 	{
 
+        $articlesList = array();
+        $articlesList = Article::getArticlesList(1);
         $article = Article::getArticleByLink($articleLink);
         
         $title = $article['title'];
@@ -39,6 +32,21 @@ class NewsController
 		
 		return true;
 		
-	}
+    }
+    
+    public function actionGetArticles($page = 1)
+    {
+
+        $articlesList = array();
+        $articlesList = Article::getArticlesList($page);
+
+        $total = Article::getTotalArticles();
+        $pagination = new Pagination($total, $page, Article::SHOW_BY_DEFAULT, 'page-');
+
+        echo json_encode($articlesList);
+        
+        return json_encode($articlesList);
+
+    }
 
 }

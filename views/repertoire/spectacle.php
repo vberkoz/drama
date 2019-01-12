@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <figure class="spectacle">
-                        <img src="/template/images/original/<?php echo $spectacle['image']; ?>" class="img-responsive" style="border-radius: 4px;">
+                        <img src="/assets/images/original/<?php echo $spectacle['image']; ?>" class="img-responsive" style="border-radius: 4px;">
                     </figure>
                 </div>
                 <div class="col-md-8">
