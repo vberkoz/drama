@@ -25,7 +25,7 @@
 							<span id="article_title"><?php echo $article['title']; ?></span>
 						</div>
 						<div style="color:#000;margin-bottom: 5px;">
-							<b>Опубліковано: <?php echo $interval->format('%a д тому'); ?></b>
+							<b><?php echo $interval->format('%a д тому'); ?></b>
 							<!-- <b><?php echo $article['created']; ?></b> -->
 						</div>
 						<div style="color:#000;">
@@ -51,9 +51,10 @@
 											<span><a href="/article/<?php echo $articleItem['link']; ?>" class="article-title-link"><?php echo $articleItem['title']; ?></a></span>
 										</div>
 										<div style="color:#000;font-size: 14px;margin-bottom: 5px;">
-											<b>Опубліковано: <?php echo $intervalItem->format('%a д тому'); ?></b>
+											<b><?php echo $intervalItem->format('%a д тому'); ?></b>
 											<!-- <b><?php echo $articleItem['created']; ?></b> -->
 										</div>
+<!-- 
 										<div style="color: #000;font-size: 14px;margin-bottom: 20px;">
 											<?php
 												if (strlen($articleItem['excerpt']) > 110) {
@@ -63,6 +64,7 @@
 												}
 											?>
 										</div>
+-->
 									</div>
 								</div>
 							<?php endif; ?>
@@ -74,7 +76,7 @@
 							<span id="article_title"><?php echo $article['title']; ?></span>
 						</div>
 						<div style="color:#000;margin-bottom: 5px;">
-							<b>Опубліковано: <?php echo $interval->format('%a д тому'); ?></b>
+							<b><?php echo $interval->format('%a д тому'); ?></b>
 							<!-- <b><?php echo $article['created']; ?></b> -->
 						</div>
 						<div style="color:#000;">
@@ -95,9 +97,10 @@
 											<span><a href="/article/<?php echo $articleItem['link']; ?>" class="article-title-link"><?php echo $articleItem['title']; ?></a></span>
 										</div>
 										<div style="color:#000;font-size: 14px;margin-bottom: 5px;">
-											<b>Опубліковано: <?php echo $intervalItem->format('%a д тому'); ?></b>
+											<b><?php echo $intervalItem->format('%a д тому'); ?></b>
 											<!-- <b><?php echo $articleItem['created']; ?></b> -->
 										</div>
+<!-- 										
 										<div style="color: #000;font-size: 14px;margin-bottom: 20px;">
 											<?php
 												if (strlen($articleItem['excerpt']) > 110) {
@@ -107,6 +110,7 @@
 												}
 											?>
 										</div>
+-->
 									</div>
 								</div>
 							<?php endif; ?>

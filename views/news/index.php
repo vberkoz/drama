@@ -24,7 +24,7 @@
                                         <span><a href="/article/<?php echo $article['link']; ?>" class="article-title-link"><?php echo $article['title']; ?></a></span>
                                     </div>
                                     <div style="color:#000;margin-bottom: 5px;">
-                                        <b>Опубліковано: <?php echo $interval->format('%a д тому'); ?></b>
+                                        <b><?php echo $interval->format('%a д тому'); ?></b>
                                         <!-- <b><?php echo $article['created']; ?></b> -->
                                     </div>
                                     <div style="color:#000;margin-bottom: 20px;">
@@ -45,7 +45,7 @@
                                         <span><a href="/article/<?php echo $article['link']; ?>" class="article-title-link"><?php echo $article['title']; ?></a></span>
                                     </div>
                                     <div style="color:#000;margin-bottom: 5px;">
-                                        <b>Опубліковано: <?php echo $interval->format('%a д тому'); ?></b>
+                                        <b><?php echo $interval->format('%a д тому'); ?></b>
                                         <!-- <b><?php echo $article['created']; ?></b> -->
                                     </div>
                                     <div style="color:#000;margin-bottom: 20px;">

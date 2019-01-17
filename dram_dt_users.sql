@@ -1,0 +1,2 @@
+INSERT INTO dram.dt_users (user_id, name, email, password, role) VALUES (1, 'admin', 'admin@mail.com', '1234', 'admin');
+INSERT INTO dram.dt_users (user_id, name, email, password, role) VALUES (2, 'author', 'author@mail.com', 'qwer', 'author');
