@@ -25,7 +25,7 @@ class WorkerController
 
         $title = 'Працівники';
         
-        require_once(ROOT . '/views/workers/list.php');
+        require_once(ROOT . '/views/workers/list/list.php');
 
         return true;
 
