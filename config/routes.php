@@ -21,10 +21,9 @@ return array(
 
 	'admin/dashboard' => 'adminDashboard/dashboard',
 	
-	'news/page-([0-9]+)' => 'news/index/$1',
-	'news' => 'news/index',
-	
-	'article/(([0-9a-z-])+)' => 'news/view/$1',
+	'articles/page-([0-9]+)' => 'article/list/$1',
+	'articles' => 'article/list',
+	'article/(([0-9a-z-])+)' => 'article/view/$1',
 	
 	'affiche/(([a-z])+)' => 'repertoire/affiche/$1',
 	

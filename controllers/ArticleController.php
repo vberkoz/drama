@@ -1,10 +1,9 @@
 <?php
 
-class NewsController
+class ArticleController
 {
-    public static function actionIndex($page = 1)
+    public static function actionList($page = 1)
     {
-
         $articlesList = array();
         $articlesList = Article::getArticlesList($page);
 
@@ -13,30 +12,26 @@ class NewsController
 
         $title = 'Новини';
         
-        require_once(ROOT . '/views/news/index.php');
+        require_once(ROOT . '/views/article/list/list.php');
         
         return true;
-
     }
 
 	public function actionView($articleLink)
 	{
-
         $articlesList = array();
         $articlesList = Article::getArticlesList(1);
         $article = Article::getArticleByLink($articleLink);
         
         $title = $article['title'];
         
-        require_once(ROOT . '/views/news/view.php');
+        require_once(ROOT . '/views/article/single/single.php');
 		
 		return true;
-		
     }
     
     public function actionGetArticles($page = 1)
     {
-
         $articlesList = array();
         $articlesList = Article::getArticlesList($page);
 
@@ -46,7 +41,5 @@ class NewsController
         echo json_encode($articlesList);
         
         return json_encode($articlesList);
-
     }
-
 }

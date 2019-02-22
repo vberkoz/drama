@@ -40,13 +40,13 @@
 
 	<div class="container">
 		<div class="row" id="upper">
-			<a href="/news">
+			<a href="/articles">
 				<img src="/assets/images/logo.png" alt="Чернівецький академічний обласний український музично-драматичний театр імені Ольги Кобилянської">
 			</a>
 		</div>
 		<div class="row" id="lower">
 			<div class="col-xs-6">
-				<a href="/news" title="Театр" style="color: #fff;">
+				<a href="/articles" title="Театр" style="color: #fff;">
 					<div id="theatre"></div>
 					Театр
 				</a>
@@ -66,9 +66,10 @@
 
 	<div class="bottom-line">
 		<div class="container">
-			<center>
+			<!-- <center>
 				<p>2016 &copy; Усі права захищені</p>
-			</center>
+			</center> -->
+			<p class="text-center">2016 &copy; Усі права захищені</p>
 		</div>
     </div>
     
