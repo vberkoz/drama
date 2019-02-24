@@ -25,7 +25,6 @@
 
 .footer h2, .footer h4, .footer h3 {
     font-family: 'Playfair Display', serif;
-    font-family: 'Montserrat', sans-serif;
     line-height: 1.3;
     color: white;
     opacity: 0.8;
@@ -50,7 +49,6 @@
 }
 .erht p {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 9pt;
     opacity: 0.6;
@@ -76,7 +74,6 @@
 }
 .social .items a {
     font-family: 'Playfair Display', serif;
-    font-family: 'Montserrat', sans-serif;
     line-height: 1.3;
     color: white;
     opacity: 0.8;
@@ -96,7 +93,6 @@
     text-align: center;
     color: #ffffff52;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     opacity: 0.6;
     font-size: 16px;
