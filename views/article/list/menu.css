@@ -9,10 +9,13 @@
 
 .topnav a {
     font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
     text-decoration: none;
     text-align: center;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 16px;
     display: block;
     color: white;
     float: left;
