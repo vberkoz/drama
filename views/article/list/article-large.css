@@ -1,0 +1,43 @@
+/* Article large */
+.article-large {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0 10px 0;
+}
+
+.article-large a, .article-large a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+.article-large h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0 0 0;
+    opacity: 0.9;
+    min-height: 64px;
+    max-height: 64px;
+    overflow: hidden;
+}
+
+.article-large p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    opacity: 0.7;
+}
+
+.article-large .excerpt {
+    margin: 5px 0 10px 0;
+    min-height: 36px;
+    max-height: 36px;
+    overflow: hidden;
+}
+
+.article-large a.author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+
+.article-large a.author:hover { text-decoration: underline; }
+
+.date { margin: 0; }

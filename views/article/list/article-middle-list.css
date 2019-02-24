@@ -1,0 +1,55 @@
+/* Article middle list */
+.article-middle-list {
+    width: 66%;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+}
+
+.article-middle { margin: 20px 0 20px 0; }
+
+.article-middle .image, .article-middle .article {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.article-middle .image {
+    margin: 0 20px 0 20px;
+    height: 151px;
+    width: 151px;
+}
+
+.article-middle .article { width: 70%; }
+
+.article-middle a, .article-middle a:visited {
+    color: black;
+    text-decoration-line: none;
+}
+
+.article-middle h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    opacity: 0.9;
+    min-height: 64px;
+    max-height: 64px;
+    overflow: hidden;
+}
+
+.article-middle p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+    opacity: 0.7;
+}
+
+.article-middle .excerpt {
+    margin: 5px 0 10px 0;
+    min-height: 36px;
+    max-height: 36px;
+    overflow: hidden;
+}
+
+.article-middle a.author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+
+.article-middle a.author:hover { text-decoration: underline; }

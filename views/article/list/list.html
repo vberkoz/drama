@@ -5,87 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Articles - Olga Kobylianska Chernivtsi Academic Regional Ukrainian Music and Drama Theater</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Playfair+Display|Playfair+Display+SC" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        body { margin: 0 }
-        .header { background-image: linear-gradient(#080601, #4c2324); }
-        .header, .header a {
-            color: white;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-        }
-        .header .content {
-            height: 10em;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .header div div a { margin: 5px }
-        .content {
-            max-width: 1024px;
-            margin: auto;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: #290000;
-            border-bottom: 3px #78481D solid;
-        }
-        .topnav a {
-            font-family: 'Roboto', sans-serif;
-            text-decoration: none;
-            text-align: center;
-            padding: 14px 16px;
-            font-size: 17px;
-            display: block;
-            color: white;
-            float: left;
-        }
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .active {
-            background-color: #460000;
-            color: #600;
-        }
-        .topnav .icon {
-            display: none;
-        }
-        @media only screen and (max-width: 1024px) {
-            .header { display: none; }
-            .topnav a:not(.active) { display: none; }
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-            .topnav.responsive { position: relative; }
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-        }
-    </style>
-    <script>
-        function toggleMenu() {
-            var x = document.getElementById("Topnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Playfair+Display|Playfair+Display+SC">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="article-large.css">
+    <link rel="stylesheet" href="article-list.css">
+    <link rel="stylesheet" href="article-middle-list.css">
+    <link rel="stylesheet" href="popular-article-list.css">
 </head>
 <body>
     <div class="header">
-        <div class="content">
+        <div class="container">
             <div><p>Чернівецький академічний обласний<br>український музично-драматичний театр<br>імені Ольги Кобилянської</p></div>
             <div>
                 <a href="https://www.twitter.com/dramtheater1905" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
@@ -95,8 +26,8 @@
             <div><a href="#"><img src="rsz_logo.png"></a></div>
         </div>
     </div>
-    <div class="topnav" id="Topnav">
-        <div class="content">
+    <div class="topnav" id="navbar">
+        <div class="container">
             <a href="#">Афіша</a>
             <a href="#">Театр</a></li>
             <a href="#">Працівники</a>
@@ -110,5 +41,151 @@
             <a class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
         </div>
     </div>
+    <div class="content">
+        <div class="container">
+            <div class="article-large">
+                <a href="#">
+                    <div style="background: url(pavlynka.png)center/cover;height:180px;"></div>
+                    <h2>Про Залицяння І Женихання Тих, Кому За 60, Зі Сцени Чернівецького Театру Розповідали Івано-Франківські Актори</h2>
+                    <p class="excerpt">В рамках 11-го фестивалю комедії "Золоті оплески Буковини" в Чернівецькому академічному обласному музично-драматичному театрі імені Ольги Кобилянської 24 жовтня відбулася вистава "За дверима бажань". Ліричну комедію за п`єсою сучасного драматурга Андрія Іванова "Божі кульбабки" блискуче зіграли актори Івано-Франківського академічного обласного українського музично-драматичного театру</p>
+                </a>
+                <a class="author" href="#">Автор</a>
+                <p class="date">Лют 13 - 7 хв читати</p>
+            </div>
+            <div class="article-list">
+                <div class="article-list-item">
+                    <a class="image" href="#" style="background: url(blistern-and-gems-of-the-family.jpg)center/cover;"></a>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Золоті Оплески-2016: Цілий День Фестивалило Рівне</h4>
+                            <p class="excerpt">До Чернівців привезли «Бабусині пригоди» – казку українського поета Олександра Олеся</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+                <div class="article-list-item">
+                    <a class="image" href="#" style="background: url(avalanche.jpg)center/cover;"></a>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Про Кохання Під Час Війни Та Гадання На Кавовій Гущі: Чернігівська Актриса Виступила В Чернівцях З Моновиставою</h4>
+                            <p class="excerpt">В рамках проведення 11-го фестивалю комедії "Золоті оплески Буковини" 25 жовтня в Центральному Палаці культури Чернівців чернівчан вражала актриса Чернігівського обласного академічного українського музично-драматичного театру імені Тараса Шевченка, заслужена артистка України Оксана Гребенюк. Вона блискуче виступила з моновиставою "Целофанове щастя" за п`єсою вірменського драматурга Каріне Ходікян - розповіддю про все життя тривалістю півтори години.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+                <div class="article-list-item">
+                    <a class="image" href="#" style="background: url(silver-spider.jpg)center/cover;"></a>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Четвертого Дня «золоті Оплески» На Двох Сценах Зібрав Чернігів</h4>
+                            <p class="excerpt">Після минулорічного успіху, коли вистава «Комедія Помилок» за Шекспіром у постановці з. а України Андрія Бакірова отримала безперечне визнання і навіть перше місце від альтернативного журі, особливо радісно зустріли новину, що у фестивальній афіші аж дві вистави Чернігівського обласного академічного українського музично-драматичного театру ім. Т.Г. Шевченка.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-large">
+                <a href="#">
+                    <div style="background: url(shine-my-crazy-diamond.jpg)center/cover;height:180px;"></div>
+                    <h2>22 жовтня відбулося феєричне відкриття ХІ фестивалю комедії</h2>
+                    <p class="excerpt">Вітаю усіх учасників і чернівецького глядача особливо: 11-денне свято театру в столиці Буковини розпочалося. Журі майже у повному склади – торішнє. Але не можу не зупинитися на одному імені із цілим списком регалій світу культури.</p>
+                </a>
+                <a class="author" href="#">Автор</a>
+                <p class="date">Лют 13 - 7 хв читати</p>
+            </div>
+
+            <div style="border-bottom: 1px #dab986 solid;margin: 10px 0 10px 0;"></div>
+
+            <div class="article-middle-list">
+                <div class="article-middle">
+                    <div class="article">
+                        <a href="#">
+                            <h2>Золоті Оплески-2016: Цілий День Фестивалило Рівне</h2>
+                            <p class="excerpt">На екваторі «Золотих оплесків» чернівецького глядача порадувала вистава Театру ім. Міхая Емінеску з (так і хочеться додати – сусідніх) Ботошан за п’єсою відомого драматурга Альберта Р.Герні «Ти мій Бог» (в оригіналі «Сильвія»). Цей театр уже не вперше на нашому фестивалі, але цього разу театральна інтрига ще й у тому, що це – режисерська робота художнього керівника Чернівецького облмуздраму н.а. України Людмили Скрипки. Оскільки електронного перекладача на озброєнні в нашому театрі немає, дивилися, що називається, наживо.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                    <a class="image" href="#" style="background: url(blistern-and-gems-of-the-family.jpg)center/cover;"></a>
+                </div>
+                <div class="article-middle">
+                    <div class="article">
+                        <a href="#">
+                            <h2>Золоті Оплески-2016: Цілий День Фестивалило Рівне</h2>
+                            <p class="excerpt">В рамках 11-го фестивалю комедії "Золоті оплески Буковини" в Чернівецькому академічному обласному музично-драматичному театрі імені Ольги Кобилянської 24 жовтня відбулася вистава "За дверима бажань". Ліричну комедію за п`єсою сучасного драматурга Андрія Іванова "Божі кульбабки" блискуче зіграли актори Івано-Франківського академічного обласного українського музично-драматичного театру</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                    <a class="image" href="#" style="background: url(pavlynka.png)center/cover;"></a>
+                </div>
+                <div class="article-middle">
+                    <div class="article">
+                        <a href="#">
+                            <h2>22 жовтня відбулося феєричне відкриття ХІ фестивалю комедії</h2>
+                            <p class="excerpt">Вітаю усіх учасників і чернівецького глядача особливо: 11-денне свято театру в столиці Буковини розпочалося. Журі майже у повному склади – торішнє. Але не можу не зупинитися на одному імені із цілим списком регалій світу культури.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                    <a class="image" href="#" style="background: url(shine-my-crazy-diamond.jpg)center/cover;"></a>
+                </div>
+            </div>
+
+            <div class="popular-article-list">
+                <h2>Популярні статті</h2>
+                <div style="border-bottom: 1px #dab986 solid;margin: 10px 0 10px 0;"></div>        
+                <div class="popular-article-list-item">
+                    <div class="image">01</div>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Золоті Оплески-2016: Цілий День Фестивалило Рівне</h4>
+                            <p class="excerpt">До Чернівців привезли «Бабусині пригоди» – казку українського поета Олександра Олеся</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+                <div class="popular-article-list-item">
+                    <div class="image">02</div>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Про Кохання Під Час Війни Та Гадання На Кавовій Гущі: Чернігівська Актриса Виступила В Чернівцях З Моновиставою</h4>
+                            <p class="excerpt">В рамках проведення 11-го фестивалю комедії "Золоті оплески Буковини" 25 жовтня в Центральному Палаці культури Чернівців чернівчан вражала актриса Чернігівського обласного академічного українського музично-драматичного театру імені Тараса Шевченка, заслужена артистка України Оксана Гребенюк. Вона блискуче виступила з моновиставою "Целофанове щастя" за п`єсою вірменського драматурга Каріне Ходікян - розповіддю про все життя тривалістю півтори години.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+                <div class="popular-article-list-item">
+                    <div class="image">03</div>
+                    <div class="article">
+                        <a href="#">
+                            <h4>Четвертого Дня «золоті Оплески» На Двох Сценах Зібрав Чернігів</h4>
+                            <p class="excerpt">Після минулорічного успіху, коли вистава «Комедія Помилок» за Шекспіром у постановці з. а України Андрія Бакірова отримала безперечне визнання і навіть перше місце від альтернативного журі, особливо радісно зустріли новину, що у фестивальній афіші аж дві вистави Чернігівського обласного академічного українського музично-драматичного театру ім. Т.Г. Шевченка.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+                <div class="popular-article-list-item">
+                    <div class="image">04</div>
+                    <div class="article">
+                        <a href="#">
+                            <h4>22 жовтня відбулося феєричне відкриття ХІ фестивалю комедії</h4>
+                            <p class="excerpt">Вітаю усіх учасників і чернівецького глядача особливо: 11-денне свято театру в столиці Буковини розпочалося. Журі майже у повному склади – торішнє. Але не можу не зупинитися на одному імені із цілим списком регалій світу культури.</p>
+                        </a>
+                        <a class="author" href="#">Автор</a>
+                        <p class="date">Лют 13 - 7 хв читати</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
 </body>
 </html>
