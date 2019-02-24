@@ -41,3 +41,13 @@
 .article-large a.author:hover { text-decoration: underline; }
 
 .date { margin: 0; }
+
+@media only screen and (max-width: 1023px) {
+    .article-large { width: 50%; }
+    .hidden-768-1024 { display: none; }
+}
+
+@media only screen and (max-width: 767px) {
+    .article-large { width: 100%; }
+    .hidden-768-1024 { display: block; }
+}

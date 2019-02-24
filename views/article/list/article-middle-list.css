@@ -53,3 +53,29 @@
 }
 
 .article-middle a.author:hover { text-decoration: underline; }
+
+@media only screen and (max-width: 1023px) {
+    .article-middle-list { width: 100%; }
+    .article-middle .article { width: 76%; }
+    .article-middle .image { margin: 0 0 0 20px; }
+}
+
+@media only screen and (max-width: 767px) {
+    .article-middle-list { width: 100%; }
+    .article-middle .article { width: 62%; }
+    .article-middle .image {
+        margin: 0 0 0 10px;
+        height: 100px;
+        width: 100px;
+    }
+    .article-middle h2 {
+        min-height: 42px;
+        max-height: 42px;
+        font-size: 16px;
+    }
+    .article-middle .excerpt {
+        margin: 5px 0 0 0;
+        min-height: 20px;
+        max-height: 18px;
+    }
+}

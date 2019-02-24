@@ -5,15 +5,19 @@
     vertical-align: top;
     margin: 20px 0 0 0;
 }
+
 .popular-article-list h2 {
     font-family: 'Playfair Display', serif;
     opacity: 0.9;
 }
+
 .popular-article-list-item { margin: 0px 0 15px 0; }
+
 .popular-article-list-item .image, .popular-article-list-item .article {
     display: inline-block;
     vertical-align: top;
 }
+
 .popular-article-list-item .image {
     margin: 0 20px 0 0;
     height: 100px;
@@ -58,3 +62,13 @@
 }
 
 .popular-article-list-item a.author:hover { text-decoration: underline; }
+
+@media only screen and (max-width: 1023px) {
+    .popular-article-list { width: 100%; }
+    .popular-article-list-item .article { width: 89%; }
+}
+
+@media only screen and (max-width: 767px) {
+    .popular-article-list { width: 100%; }
+    .popular-article-list-item .article { width: 72%; }
+}

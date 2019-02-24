@@ -54,3 +54,15 @@
 }
 
 .article-list-item a.author:hover { text-decoration: underline; }
+
+@media only screen and (max-width: 1023px) {
+    .article-list { width: 49%; }
+    .article-list-item .image { margin: 0 20px 0 20px; }
+    .article-list-item .article { width: 60%; }
+}
+
+@media only screen and (max-width: 767px) {
+    .article-list { width: 100%; }
+    .article-list-item .image { margin: 0 10px 0 0; }
+    .article-list-item .article { width: 62%; }
+}

@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Articles - Olga Kobylianska Chernivtsi Academic Regional Ukrainian Music and Drama Theater</title>
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Playfair+Display|Playfair+Display+SC">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="article-large.css">
@@ -26,21 +30,25 @@
             <div><a href="#"><img src="rsz_logo.png"></a></div>
         </div>
     </div>
-    <div class="topnav" id="navbar">
-        <div class="container">
-            <a href="#">Афіша</a>
-            <a href="#">Театр</a></li>
-            <a href="#">Працівники</a>
-            <a href="#">Репертуар</a>
-            <a href="#">Фестиваль</a>
-            <a href="#">Студія</a>
-            <a href="#" class="active">Новини</a>
-            <a href="#">Вакансії</a>
-            <a href="http://tickets.dramtheater.cv.ua/ua/playbill/" target="_blank">Квитки</a>
-            <a href="#">Контакти</a>
-            <a class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+
+    <div id="navbar">
+        <div class="topnav" id="menu">
+            <div class="container">
+                <a href="#">Афіша</a>
+                <a href="#">Театр</a></li>
+                <a href="#">Працівники</a>
+                <a href="#">Репертуар</a>
+                <a href="#">Фестиваль</a>
+                <a href="#">Студія</a>
+                <a href="#" class="active">Новини</a>
+                <a href="#">Вакансії</a>
+                <a href="http://tickets.dramtheater.cv.ua/ua/playbill/" target="_blank">Квитки</a>
+                <a href="#">Контакти</a>
+                <a class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            </div>
         </div>
     </div>
+
     <div class="content">
         <div class="container">
             <div class="article-large">
@@ -87,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="article-large">
+            <div class="article-large hidden-768-1024">
                 <a href="#">
                     <div style="background: url(shine-my-crazy-diamond.jpg)center/cover;height:180px;"></div>
                     <h2>22 жовтня відбулося феєричне відкриття ХІ фестивалю комедії</h2>
@@ -186,6 +194,7 @@
         </div>
     </div>
 
+    <!-- JavaScript -->
     <script src="menu.js"></script>
 </body>
 </html>

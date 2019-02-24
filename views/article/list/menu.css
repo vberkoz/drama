@@ -1,6 +1,7 @@
 /* Menu */
+#navbar { z-index: 1; }
+
 .topnav {
-    z-index: 1;
     overflow: hidden;
     background-color: #290000;
     border-bottom: 3px #78481D solid;
