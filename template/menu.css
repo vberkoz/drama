@@ -2,16 +2,15 @@
 #navbar { z-index: 1; }
 
 .topnav {
+    font-family: 'PT Sans', sans-serif;
     overflow: hidden;
     background-color: #290000;
-    /* border-bottom: 3px #78481D solid; */
 }
 
 .topnav a {
     font-family: 'Roboto', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-weight: 400;
-    /* opacity: 0.8; */
     text-decoration: none;
     text-align: center;
     padding: 14px 22px;
@@ -21,15 +20,8 @@
     float: left;
 }
 
-.topnav a:hover {
-    background-color: #490000;
-}
-
-.topnav a.active {
-    /* background-color: #fdd59b; */
-    /* color: #290000; */
-    background-color: #490000;
-}
+.topnav a:hover { background-color: #490000; }
+.topnav a.active { background-color: #490000; }
 
 .topnav .icon { display: none; }
 
