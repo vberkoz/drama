@@ -156,6 +156,7 @@
 
 @media only screen and (max-width: 767px) {
     .footer .article-large, .footer .article-list { width: 100%; }
+    .footer .article-list { margin: 0; }
     .footer .article-list-item { margin: 0px 0 15px 0; }
     .erht a div { width: 42%; }
     .erht p { width: 47%; }

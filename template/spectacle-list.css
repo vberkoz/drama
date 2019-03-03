@@ -62,5 +62,5 @@
 @media only screen and (max-width: 767px) {
     .spectacle-list { width: 100%; }
     .spectacle-list-item .image { margin: 0 10px 0 0; }
-    .spectacle-list-item .spectacle { width: 62%; }
+    .spectacle-list-item .spectacle { width: 60%; }
 }
