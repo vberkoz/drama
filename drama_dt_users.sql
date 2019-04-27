@@ -1,0 +1,2 @@
+INSERT INTO drama.dt_users (id, name, email, password) VALUES (1, 'Admin', 'admin@drama.com', '123456');
+INSERT INTO drama.dt_users (id, name, email, password) VALUES (2, 'Author', 'author@drama.com', '123456');

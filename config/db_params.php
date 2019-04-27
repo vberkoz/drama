@@ -4,5 +4,5 @@ return array(
 	'host' => 'localhost',
 	'dbname' => 'drama',
 	'user' => 'root',
-	'password' => 'ghbnjy22',
+	'password' => 'password',
 );

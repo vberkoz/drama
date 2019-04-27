@@ -10,6 +10,10 @@
     display: inline-block;
 }
 
+.single-article {
+    padding-top: 60px;
+}
+
 .single-article .title {
     font-family: 'PT Serif', serif;
     font-size: 30pt;
