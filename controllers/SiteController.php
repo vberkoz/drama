@@ -9,8 +9,9 @@ class SiteController
      */
     public function actionIndex()
     {
+        $title = 'Start page';
 
-        require_once(ROOT . '/views/site/index.php');
+        require_once(ROOT . '/views/public/site/start.php');
 
         return true;
 
