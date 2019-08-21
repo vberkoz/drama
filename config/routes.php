@@ -35,7 +35,7 @@ return array(
 	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
 	'worker/(([0-9a-z-])+)' => 'worker/details/$1',
 	
-	// 'contacts' => 'site/contacts',
+    'contacts' => 'site/contacts',
 	
 	'index.php' => 'site/index',
 	'' => 'site/index',

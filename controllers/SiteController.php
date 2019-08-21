@@ -5,6 +5,7 @@ class SiteController
 
     /**
      * Main page action
+     *
      * @return boolean
      */
     public function actionIndex()
@@ -19,14 +20,14 @@ class SiteController
 
     /**
      * Contacts page action
+     *
      * @return boolean
      */
     public function actionContacts()
     {
+        $title = 'Contacts';
 
-        $name = '';
         $mail = '';
-        $subject = '';
         $message = '';
 
         $errors = false;
@@ -38,13 +39,12 @@ class SiteController
         if (!$errors) {
             $adminEmail = 'vberkoz@gmail.com';
             $message = "Text: {$message}. From: {$mail}";
-            $result = mail($adminEmail, $subject, $message);
+            $result = mail($adminEmail, 'Drama theater', $message);
         }
 
-        require_once(ROOT . '/views/site/contacts.php');
+        require_once(ROOT . '/views/public/site/contacts.php');
 
         return true;
-
     }
 
 }
