@@ -24,7 +24,7 @@
                     <p>
                         <?php
                             if (strlen($image['filename']) > 33) {
-                                echo mb_substr($image['tifilenametle'], 0, 30) . '...';
+                                echo mb_substr($image['filename'], 0, 30) . '...';
                             } else {
                                 echo $image['filename'];
                             }

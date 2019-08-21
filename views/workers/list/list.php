@@ -1,7 +1,6 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <section class="theatre">
-	<!-- <div class="title"><h1>Працівники</h1></div> -->
 	<div class="menu-line">
 		<div class="container">
 			<div class="row">
@@ -9,7 +8,12 @@
 					<nav>
 						<ul>
                             <?php foreach ($departments as $department): ?>
-                                <li><a href="<?php echo $department['link']; ?>" <?php echo (strpos($_SERVER['REQUEST_URI'], $department['link']))?'class="active1"':null?>><?php echo $department['title']; ?></a></li>
+                                <li>
+                                    <a href="<?php echo $department['link']; ?>" 
+                                        <?php echo (strpos($_SERVER['REQUEST_URI'], $department['link']))?'class="active1"':null?>>
+                                        <?php echo $department['title']; ?>
+                                    </a>
+                                </li>
                             <?php endforeach; ?>
 						</ul>
 					</nav>
@@ -22,7 +26,8 @@
         <?php foreach ($departmentWorkers as $worker): ?>
             <a href="/worker/<?php echo $worker['link'];?>">
                 <figure class="team-li">
-                    <img src="/assets/images/original/<?php echo $worker['image']; ?>" alt="<?php echo $worker['image']; ?>">
+                    <img src="/assets/images/original/<?php echo $worker['image']; ?>" 
+                         alt="<?php echo $worker['image']; ?>">
                     <p><?php echo $worker['name'];?></p>
                     <span><?php echo $worker['position'];?></span>
                 </figure>

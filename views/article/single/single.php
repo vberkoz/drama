@@ -28,7 +28,7 @@
 							<b><?php echo $interval->format('%a д тому'); ?></b>
 							<!-- <b><?php echo $article['created']; ?></b> -->
 						</div>
-						<div style="color:#000;">
+						<div class="article-body" style="color:#000;">
 							<p><?php echo $article['body']; ?></p>
 						</div>
 					</div>
