@@ -20,23 +20,33 @@ return array(
 	'admin/image/(([0-9a-z-])+)' => 'adminImage/image/$1',
 
 	'admin/dashboard' => 'adminDashboard/dashboard',
-	
+
+    'contacts' => 'site/contacts',
+
+    'vacancies' => 'vacancy/index',
+
 //	'news/page-([0-9]+)' => 'news/index/$1',
 //	'news' => 'news/index',
-	'blog' => 'blog/index',
-	
-	'article/(([0-9a-z-])+)' => 'news/view/$1',
-	
-	'affiche/(([a-z])+)' => 'repertoire/affiche/$1',
-	
-	'repertoire/(([0-9a-z-])+)' => 'repertoire/index/$1',
-	'spectacle/(([0-9a-z-])+)' => 'repertoire/spectacle/$1',
-	
-	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
-	'worker/(([0-9a-z-])+)' => 'worker/details/$1',
-	
-    'contacts' => 'site/contacts',
-	
+//  'article/(([0-9a-z-])+)' => 'news/view/$1',
+    'blog' => 'blog/index',
+
+    'studio' => 'site/studio',
+
+    'festival' => 'site/festival',
+
+//	'repertoire/(([0-9a-z-])+)' => 'repertoire/index/$1',
+//	'spectacle/(([0-9a-z-])+)' => 'repertoire/spectacle/$1',
+	'repertoire' => 'spectacle/repertoire',
+
+//	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
+//	'worker/(([0-9a-z-])+)' => 'worker/details/$1',
+    'workers' => 'worker/index',
+
+    'theater' => 'site/theater',
+
+//    'affiche/(([a-z])+)' => 'repertoire/affiche/$1',
+    'program' => 'spectacle/program',
+
 	'index.php' => 'site/index',
 	'' => 'site/index',
 );

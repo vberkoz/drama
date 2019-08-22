@@ -2,6 +2,14 @@
 
 class WorkerController
 {
+    public static function actionIndex()
+    {
+        $title = 'Workers';
+
+        require_once(ROOT . '/views/public/workers/index.php');
+
+        return true;
+    }
 
     /**
      * Workers list page action

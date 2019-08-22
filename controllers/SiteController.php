@@ -15,7 +15,48 @@ class SiteController
         require_once(ROOT . '/views/public/site/start.php');
 
         return true;
+    }
 
+    /**
+     * Theater page action
+     *
+     * @return bool
+     */
+    public static function actionTheater()
+    {
+        $title = 'Theater';
+
+        require_once(ROOT . '/views/public/site/theater.php');
+
+        return true;
+    }
+
+    /**
+     * Festival page action
+     *
+     * @return bool
+     */
+    public static function actionFestival()
+    {
+        $title = 'Festival';
+
+        require_once(ROOT . '/views/public/site/festival.php');
+
+        return true;
+    }
+
+    /**
+     * Studio page action
+     *
+     * @return bool
+     */
+    public static function actionStudio()
+    {
+        $title = 'Studio';
+
+        require_once(ROOT . '/views/public/site/studio.php');
+
+        return true;
     }
 
     /**

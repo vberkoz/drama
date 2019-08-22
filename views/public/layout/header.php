@@ -10,14 +10,14 @@
 <body>
 <header>
     <ul>
-        <li><a href="#">Affiche</a></li>
-        <li><a href="#">Theater</a></li>
-        <li><a href="#">Workers</a></li>
-        <li><a href="#">Repertiore</a></li>
-        <li><a href="#">Festival</a></li>
-        <li><a href="#">Studio</a></li>
+        <li><a href="/program">Program</a></li>
+        <li><a href="/theater">Theater</a></li>
+        <li><a href="/workers">Workers</a></li>
+        <li><a href="/repertoire">Repertoire</a></li>
+        <li><a href="/festival">Festival</a></li>
+        <li><a href="/studio">Studio</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="#">Vacancies</a></li>
+        <li><a href="/vacancies">Vacancies</a></li>
         <li><a href="/contacts">Contacts</a></li>
     </ul>
 </header>
