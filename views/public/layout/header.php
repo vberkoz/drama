@@ -8,4 +8,16 @@
     <title><?php echo $title; ?></title>
 </head>
 <body>
-<header>Header</header>
+<header>
+    <ul>
+        <li><a href="#">Affiche</a></li>
+        <li><a href="#">Theater</a></li>
+        <li><a href="#">Workers</a></li>
+        <li><a href="#">Repertiore</a></li>
+        <li><a href="#">Festival</a></li>
+        <li><a href="#">Studio</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#">Vacancies</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+    </ul>
+</header>
