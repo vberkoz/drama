@@ -44,8 +44,7 @@ return array(
 
     'theater' => 'site/theater',
 
-//    'affiche/(([a-z])+)' => 'repertoire/affiche/$1',
-    'program' => 'spectacle/program',
+    'program/(([a-z])+)' => 'spectacle/program/$1',
 
 	'index.php' => 'site/index',
 	'' => 'site/index',

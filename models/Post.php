@@ -18,10 +18,10 @@ class Post
         $page = intval($page);
         $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
 
+        // Establish connection to database
         $db = Db::getConnection();
 
-        $posts = array();
-        $result = $db->query("SELECT id, title, link, excerpt, created, picture, modified, published"
+        $result = $db->query("SELECT *"
             . " FROM dt_articles"
             . " ORDER BY modified DESC"
             . " LIMIT " . self::SHOW_BY_DEFAULT
@@ -29,6 +29,7 @@ class Post
         );
 
         $i = 0;
+        $posts = array();
         while ($row = $result->fetch()) {
             $posts[$i]['id'] = $row['id'];
             $posts[$i]['title'] = $row['title'];

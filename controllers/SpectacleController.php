@@ -8,11 +8,15 @@ class SpectacleController
     /**
      * Shows spectacles program
      *
+     * @param string $month    Month for which to show performances
      * @return bool
      */
-    public static function actionProgram()
+    public static function actionProgram($month)
     {
         $title = 'Program';
+
+        $spectacles = array();
+        $spectacles = Spectacle::getSpectacles();
 
         require_once ROOT . '/views/public/spectacles/program.php';
 

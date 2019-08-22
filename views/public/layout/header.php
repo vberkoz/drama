@@ -10,7 +10,7 @@
 <body>
 <header>
     <ul>
-        <li><a href="/program">Program</a></li>
+        <li><a href="/program/<?php echo strtolower(date("F")); ?>">Program</a></li>
         <li><a href="/theater">Theater</a></li>
         <li><a href="/workers">Workers</a></li>
         <li><a href="/repertoire">Repertoire</a></li>
