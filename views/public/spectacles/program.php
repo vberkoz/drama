@@ -6,6 +6,10 @@
     <?php echo $month; ?>
 </p>
 <ul>
+    <li><a href="/program/<?php echo strtolower($currentMonth); ?>"><?php echo $currentMonth; ?></a></li>
+    <li><a href="/program/<?php echo strtolower($nextMonth); ?>"><?php echo $nextMonth; ?></a></li>
+</ul>
+<ul>
     <?php foreach ($spectacles as $spectacle): ?>
         <li><a href="/#"><?php echo $spectacle['title']; ?></a></li>
     <?php endforeach; ?>

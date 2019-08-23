@@ -15,8 +15,13 @@ class SpectacleController
     {
         $title = 'Program';
 
+        $date = date('m', strtotime($month));
+
         $spectacles = array();
-        $spectacles = Spectacle::getSpectacles();
+        $spectacles = Spectacle::getSpectaclesByMonth($date);
+
+        $currentMonth = date("F");
+        $nextMonth = date("F", strtotime('first day of +1 month'));
 
         require_once ROOT . '/views/public/spectacles/program.php';
 
