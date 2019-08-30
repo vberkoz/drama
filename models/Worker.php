@@ -1,7 +1,70 @@
 <?php
+/**
+ * Worker model
+ */
 
 class Worker
 {
+    /**
+     * Get theater departments
+     *
+     * @return array
+     */
+    public static function getDepartments()
+    {
+        $db = Db::getConnection();
+
+        $departmentsList = array();
+
+        $result = $db->query('SELECT id, title, link FROM dt_departments');
+
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $departmentsList[$i]['id'] = $row['id'];
+            $departmentsList[$i]['title'] = $row['title'];
+            $departmentsList[$i]['link'] = $row['link'];
+            $i++;
+        }
+
+        return $departmentsList;
+    }
+
+    /**
+     * Get workers by department id
+     *
+     * @param $departmentId
+     * @return array
+     */
+    public static function getWorkers($departmentId)
+    {
+        $departmentId = intval($departmentId);
+
+        if ($departmentId) {
+            $db = Db::getConnection();
+
+            $result = $db->query("SELECT *"
+                . " FROM dt_workers"
+                . " WHERE department_id = '$departmentId'"
+                . " ORDER BY sort ASC"
+            );
+
+            $i = 0;
+            $workers = array();
+            while ($row = $result->fetch()) {
+                $workers[$i]['id'] = $row['id'];
+                $workers[$i]['name'] = $row['name'];
+                $workers[$i]['link'] = $row['link'];
+                $workers[$i]['position'] = $row['position'];
+                $workers[$i]['merit'] = $row['merit'];
+                $workers[$i]['image'] = $row['image'];
+                $workers[$i]['department_id'] = $row['department_id'];
+                $workers[$i]['sort'] = $row['sort'];
+                $i++;
+            }
+
+            return $workers;
+        }
+    }
 
     /**
      * Returns an array of departments

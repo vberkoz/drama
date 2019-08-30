@@ -2,8 +2,20 @@
 
 class WorkerController
 {
-    public static function actionIndex()
+    public static function actionIndex($departmentLink = 'management')
     {
+        $departments = array();
+        $departments = Worker::getDepartments();
+
+        foreach ($departments as $department) {
+            if ($departmentLink == $department['link']) {
+                $departmentId = $department['id'];
+            }
+        }
+
+        $workers = array();
+        $workers = Worker::getWorkers($departmentId);
+
         $title = 'Workers';
 
         require_once(ROOT . '/views/public/workers/index.php');
