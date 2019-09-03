@@ -13,7 +13,7 @@
         <li><a href="/program/<?php echo strtolower(date("F")); ?>">Program</a></li>
         <li><a href="/theater">Theater</a></li>
         <li><a href="/workers/management">Workers</a></li>
-        <li><a href="/repertoire">Repertoire</a></li>
+        <li><a href="/repertoire/general">Repertoire</a></li>
         <li><a href="/festival">Festival</a></li>
         <li><a href="/studio">Studio</a></li>
         <li><a href="/blog">Blog</a></li>

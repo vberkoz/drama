@@ -36,7 +36,7 @@ return array(
 
 //	'repertoire/(([0-9a-z-])+)' => 'repertoire/index/$1',
 //	'spectacle/(([0-9a-z-])+)' => 'repertoire/spectacle/$1',
-	'repertoire' => 'spectacle/repertoire',
+	'repertoire/(([0-9a-z-])+)' => 'spectacle/repertoire/$1',
 
 //	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
 //	'worker/(([0-9a-z-])+)' => 'worker/details/$1',

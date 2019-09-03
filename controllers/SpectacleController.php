@@ -28,9 +28,28 @@ class SpectacleController
         return true;
     }
 
-    public static function actionRepertoire()
+    /**
+     * Repertoire page action
+     *
+     * @param string $category
+     * @return bool
+     */
+    public static function actionRepertoire($category = 'general')
     {
         $title = 'Repertoire';
+
+        $categories = array();
+        $categories = Spectacle::getCategories();
+
+        $categoryId = 1;
+        foreach ($categories as $categoryItem) {
+            if ($category == $categoryItem['link']) {
+                $categoryId = $categoryItem['id'];
+            }
+        }
+
+        $spectacles = array();
+        $spectacles = Spectacle::getPerformancesByCategory($categoryId);
 
         require_once ROOT . '/views/public/spectacles/repertoire.php';
 
