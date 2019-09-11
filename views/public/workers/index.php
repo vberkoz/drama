@@ -11,7 +11,7 @@
 </ul>
 <ul>
     <?php foreach ($workers as $worker): ?>
-        <li><a href="#"><?php echo $worker['name']; ?></a></li>
+        <li><a href="details/<?php echo $worker['link']; ?>"><?php echo $worker['name']; ?></a></li>
     <?php endforeach; ?>
 </ul>
 <?php include_once ROOT . '/views/public/layout/footer.php' ?>

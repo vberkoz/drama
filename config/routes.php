@@ -41,6 +41,7 @@ return array(
 //	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
 //	'worker/(([0-9a-z-])+)' => 'worker/details/$1',
     'workers/(([0-9a-z-])+)' => 'worker/index/$1',
+    'workers/details/(([0-9a-z-])+)' => 'worker/details/$1',
 
     'theater' => 'site/theater',
 
