@@ -4,4 +4,9 @@
     This is vacancies page<br />
     Here you can find information about free vacancies we have
 </p>
+<ul>
+    <?php foreach ($vacancies as $vacancy): ?>
+        <li><a href="/#"><?php echo $vacancy['title']; ?></a></li>
+    <?php endforeach; ?>
+</ul>
 <?php include_once ROOT . '/views/public/layout/footer.php' ?>
