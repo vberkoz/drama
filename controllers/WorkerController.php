@@ -32,14 +32,27 @@ class WorkerController
     /**
      * Worker details page action
      *
-     * @param string $workerLink
-     * @return boolean
+     * @param string $departmentLink
+     * @param $workerLink
+     * @return bool
      */
-    public function actionDetails($workerLink)
+    public function actionDetails($departmentLink = 'management', $workerLink)
     {
+        $departments = array();
+        $departments = Worker::getDepartments();
+
+        foreach ($departments as $department) {
+            if ($departmentLink == $department['link']) {
+                $departmentId = $department['id'];
+            }
+        }
+
+        $workers = array();
+        $workers = Worker::getWorkers($departmentId);
+
         $worker = Worker::getWorker($workerLink);
 
-        $title = $worker['name'];
+        $title = 'Workers';
 
         require_once(ROOT . '/views/public/workers/details.php');
 

@@ -6,12 +6,12 @@
 </p>
 <ul>
     <?php foreach ($departments as $department): ?>
-        <li><a href="<?php echo $department['link']; ?>"><?php echo $department['title']; ?></a></li>
+        <li><a href="/workers/<?php echo $department['link']; ?>"><?php echo $department['title']; ?></a></li>
     <?php endforeach; ?>
 </ul>
 <ul>
     <?php foreach ($workers as $worker): ?>
-        <li><a href="details/<?php echo $worker['link']; ?>"><?php echo $worker['name']; ?></a></li>
+        <li><a href="/workers/<?php echo $departmentLink; ?>/<?php echo $worker['link']; ?>"><?php echo $worker['name']; ?></a></li>
     <?php endforeach; ?>
 </ul>
 <?php include_once ROOT . '/views/public/layout/footer.php' ?>
