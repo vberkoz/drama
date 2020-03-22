@@ -51,7 +51,7 @@ class SpectacleController
         $spectacles = array();
         $spectacles = Spectacle::getPerformancesByCategory($categoryId);
 
-        require_once ROOT . '/views/public/spectacles/repertoire.php';
+        require_once ROOT . '/views/public/repertoire/index.php';
 
         return true;
     }

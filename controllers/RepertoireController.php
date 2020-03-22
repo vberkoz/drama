@@ -10,25 +10,75 @@ class RepertoireController
      */
     public function actionIndex($categoryLink = 'general')
     {
+//        $categories = array();
+//        $categories = Repertoire::getCategoriesList();
+//
+//        foreach ($categories as $category) {
+//            if ($categoryLink == $category['link']) {
+//                $categoryId = $category['id'];
+//            }
+//        }
+//
+//        $categoryPerformances = array();
+//        $categoryPerformances = Repertoire::getPerformancesListByCategory($categoryId);
+//
+//        $title = 'Репертуар';
+//
+//        require_once(ROOT . '/views/repertoire/index.php');
+//
+//        return true;
+
+        $title = 'Repertoire';
 
         $categories = array();
-        $categories = Repertoire::getCategoriesList();
+        $categories = Spectacle::getCategories();
 
-        foreach ($categories as $category) {
-            if ($categoryLink == $category['link']) {
-                $categoryId = $category['id'];
+        $categoryId = 1;
+        foreach ($categories as $categoryItem) {
+            if ($categoryLink == $categoryItem['link']) {
+                $categoryId = $categoryItem['id'];
             }
         }
 
-        $categoryPerformances = array();
-        $categoryPerformances = Repertoire::getPerformancesListByCategory($categoryId);
+        $spectacles = array();
+        $spectacles = Spectacle::getPerformancesByCategory($categoryId);
 
-        $title = 'Репертуар';
-        
-        require_once(ROOT . '/views/repertoire/index.php');
+        require_once ROOT . '/views/public/repertoire/index.php';
 
         return true;
+    }
 
+    /**
+     * Spectacle details
+     *
+     * @param string $spectacleLink
+     * @return boolean
+     */
+    public function actionDetails($categoryLink, $spectacleLink)
+    {
+        $categories = array();
+        $categories = Spectacle::getCategories();
+
+        foreach ($categories as $categoryItem) {
+            if ($categoryLink == $categoryItem['link']) {
+                $categoryId = $categoryItem['id'];
+            }
+        }
+
+        $spectacles = array();
+        $spectacles = Spectacle::getPerformancesByCategory($categoryId);
+
+        $spectacleDetails = Spectacle::getSpectacle($spectacleLink);
+
+        echo '<pre>';
+        var_dump($spectacleLink);
+        echo '</pre>';
+
+        $title = 'Repertoire';
+
+        require_once(ROOT . '/views/public/repertoire/details.php');
+
+        return true;
     }
 
     /**
@@ -59,26 +109,5 @@ class RepertoireController
 
     }
 
-    /**
-     * Spectacle page action
-     * @param string $spectacleLink
-     * @return boolean
-     */
-	public function actionSpectacle($spectacleLink)
-	{
-
-        $spectacle = Repertoire::getSpectacleByLink($spectacleLink);
-
-        $spectacleActors = Worker::getActorsListBySpectacle($spectacle['id']);
-
-        $tickets = Repertoire::getAfficheBySpectacle($spectacle['id']);
-        
-        $title = $spectacle['title'];
-        
-        require_once(ROOT . '/views/repertoire/spectacle.php');
-		
-		return true;
-		
-	}
 
 }

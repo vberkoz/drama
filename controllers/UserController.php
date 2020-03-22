@@ -2,6 +2,38 @@
 
 class UserController
 {
+    public function actionLoginv1()
+    {
+        $email = '';
+        $password = '';
+
+        if (isset($_POST['submit'])) {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $errors = false;
+
+            if (!User::checkPassword($password)) {
+                $errors[] = 'Password must be longer or equal 6 symbols';
+            }
+
+            if (!User::checkEmail($email)) {
+                $errors[] = 'Wrong email';
+            }
+
+            $userId = User::checkUserData($email, $password);
+
+            if (!$userId) {
+                $errors[] = 'Wrong email or password';
+            } else {
+                User::auth($userId);
+                header('Location: /admin/dashboard/');
+            }
+        }
+
+        require_once(ROOT . '/views/user/loginv1.php');
+        return true;
+    }
 
     public function actionLogin()
     {

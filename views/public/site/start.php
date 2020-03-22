@@ -3,4 +3,5 @@
 <ul>
     <li><a href="/blog">Blog</a></li>
     <li><a href="/contacts">Contacts</a></li>
+    <li><a href="/login">Login</a></li>
 </ul>

@@ -38,6 +38,7 @@ class WorkerController
      */
     public function actionDetails($departmentLink = 'management', $workerLink)
     {
+        echo $workerLink;
         $departments = array();
         $departments = Worker::getDepartments();
 

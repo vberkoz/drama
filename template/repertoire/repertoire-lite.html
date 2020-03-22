@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repertoire</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11pt;
+        /* color: #333; */
+        color: #999;
+        background-color: #111;
+    }
+    .container {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 98vh;
+    }
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+    }
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8em;
+    }
+    .menu, .row {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0;
+    }
+    li {
+        margin: 0 5px;
+    }
+    a, a:active, a:visited {
+        text-decoration: none;
+        /* color: #333; */
+        color: #999;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a.active {
+        text-decoration: underline;
+    }
+    .title {
+        text-align: center;
+    }
+    section {
+        flex: 1;
+    }
+    .item {
+        margin: 0 5px 100px 5px;
+        width: 32%;
+    }
+    .item a div {
+        height: 300px;
+    }
+    .item a .excerpt {
+        min-height: 39px;
+        max-height: 39px;
+        overflow: hidden;
+    }
+    footer .menu {
+        justify-content: space-around;
+        align-items: baseline;
+        padding: 50px;
+    }
+    footer .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    footer .menu ul li {
+        padding: 2px 0;
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="menu">
+            <p>Chernivtsi Theater</p>
+            <ul class="menu">
+                <li><a href="#" class="active">Repertoire</a></li>
+                <li><a href="#">Theater</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">UA</a></li>
+            </ul>
+        </header>
+        <section>
+            <h1>Repertoire</h1>
+            <div class="row">
+                <div class="item">
+                    <a href="#">
+                        <p class="type">love—story with intermission</p>
+                        <div style="background: url(../images/shine-my-crazy-diamond.jpg)center/cover;"></div>
+                        <h2>Shine, my crazy diamond!</h2>
+                        <p class="excerpt">It is a play about three women of great age, widows who, no matter what, do not lose their sense of humor, common sense and especially charm.</p>
+                    </a>
+                    <a class="author" href="#">Ivan Menchell</a>
+                    <p class="date">Duration - 2h</p>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <p class="type">parable for 1 act</p>
+                        <div style="background: url(../images/avalanche.jpg)center/cover;"></div>
+                        <h2>Avalanche</h2>
+                        <p class="excerpt">One of the most famous plays in Turkey by Turkish playwright Tunger Giugenooglu. And her first production in Ukraine on the stage of Olga Kobylyanska Chernivtsi Musical Theater in the production of the artistic director of the theater - People's Artist of Ukraine Lyudmila Skrypka.</p>
+                    </a>
+                    <a class="author" href="#">According to the play by T. Giugenoglu</a>
+                    <p class="date">Duration - 1h 20m</p>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <p class="type">Western in Chernivtsi</p>
+                        <div style="background: url(../images/silver-spider.jpg)center/cover;"></div>
+                        <h2>Silver Spider</h2>
+                        <p class="excerpt">The first performance about the mysterious, romantic and a bit bandit city Chernivtsi after Vasily Kozhelianka's novel of the same name.</p>
+                    </a>
+                    <a class="author" href="#">Based on Vasily Kozhelianka's novel</a>
+                    <p class="date">Duration - 2h 40m</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <a href="#">
+                        <p class="type">parable for 2 acts</p>
+                        <div style="background: url(../images/trahediya-buntu.jpg)center/cover;"></div>
+                        <h2>The tragedy of rebellion</h2>
+                        <p class="excerpt">Each of the historical eras does not pass without a trace either to individuals or to the people as a whole. The most terrible tragedy is the tragedy of a person who did not go out of his own way, but, as if by other people's clothes, had carried someone else's terrible destiny.</p>
+                    </a>
+                    <a class="author" href="#">Panas Myrnyi</a>
+                    <p class="date">Duration - 2h 30m</p>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <p class="type">parable for 1 act</p>
+                        <div style="background: url(../images/porankova-dusha.jpg)center/cover;"></div>
+                        <h2>Morning Soul</h2>
+                        <p class="excerpt">To the 155th anniversary of the birth of Ukrainian writer Olga Kobylyanska, whose name is our theater, People's Artist of Ukraine, General-artistic director of the Lviv National Academic Opera and Ballet Theater named after Solomiya Krushelnytska Vasyl Vovkun performed " soul ", which he wrote on the basis of Olga Julianovna's diaries.</p>
+                    </a>
+                    <a class="author" href="#">Vasyl Vovkun</a>
+                    <p class="date">Duration - 1h 30m</p>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <p class="type">mystical drama for 1 act</p>
+                        <div style="background: url(../images/vir-abo-ne-vir.jpg)center/cover;"></div>
+                        <h2>...Believe it or not</h2>
+                        <p class="excerpt">Our fellow countryman, famous contemporary Ukrainian writer Maria Matios, understands the people's soul like no other. This is what you will see when you see the play "... BELIEVE OR NOT BELIEVE" based on her story "Don't Pay Me Never ...". You may recognize your friends and relatives, remember the childhood from which the words of the grandmothers about the life of a person on this earth come from fragments.</p>
+                    </a>
+                    <a class="author" href="#">based on the story by M. Matios</a>
+                    <p class="date">Duration - 1h 15m</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Theater</a></li>
+                    <li><a href="#">Workers</a></li>
+                    <li><a href="#">Festival</a></li>
+                    <li><a href="#">Studio</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Repertoire</a></li>
+                    <li><a href="#">Affiche</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Vacancies</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Tickecs</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="title"><p>Olga Kobylyanska Chernivtsi Academic Regional Ukrainian Music Drama Theater</p></div>
+        </footer>
+    </div>
+</body>
+</html>

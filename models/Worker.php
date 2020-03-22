@@ -76,6 +76,7 @@ class Worker
      */
     public static function getWorker($link)
     {
+        echo $link;
         if ($link) {
             // Establish connection to database
             $db = Db::getConnection();

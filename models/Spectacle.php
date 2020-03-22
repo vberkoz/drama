@@ -108,4 +108,22 @@ class Spectacle
             return $performances;
         }
     }
+
+    /**
+     * Returns spectacle item by link
+     *
+     * @param $link
+     * @return mixed
+     */
+    public static function getSpectacle($link)
+    {
+        if ($link) {
+            $db = Db::getConnection();
+
+            $result = $db->query("SELECT * FROM dt_performances WHERE link='$link'");
+            $result->setFetchMode(PDO::FETCH_ASSOC);
+
+            return $result->fetch();
+        }
+    }
 }

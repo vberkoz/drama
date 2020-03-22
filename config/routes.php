@@ -36,7 +36,8 @@ return array(
 
 //	'repertoire/(([0-9a-z-])+)' => 'repertoire/index/$1',
 //	'spectacle/(([0-9a-z-])+)' => 'repertoire/spectacle/$1',
-	'repertoire/(([0-9a-z-])+)' => 'spectacle/repertoire/$1',
+	'repertoire/(([0-9a-z-])+)/(([0-9a-z-])+)' => 'repertoire/details/$1/$2',
+	'repertoire/(([0-9a-z-])+)' => 'repertoire/index/$1',
 
 //	'workers/(([0-9a-z-])+)' => 'worker/list/$1',
 //	'worker/(([0-9a-z-])+)' => 'worker/details/$1',
@@ -45,7 +46,9 @@ return array(
 
     'theater' => 'site/theater',
 
-    'program/(([a-z])+)' => 'spectacle/program/$1',
+	'program/(([a-z])+)' => 'spectacle/program/$1',
+	
+	'login' => 'user/loginv1',
 
 	'index.php' => 'site/index',
 	'' => 'site/index',
